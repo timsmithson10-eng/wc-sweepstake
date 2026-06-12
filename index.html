@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2026 World Cup Sweepstake</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">2026 World Cup Sweepstake</p>
+      <h1>Live Dashboard</h1>
+      <p id="lastUpdated">Loading latest data…</p>
+    </div>
+    <button id="refreshBtn">Refresh</button>
+  </header>
+
+  <main>
+    <section class="cards">
+      <div class="card"><span>Top Team</span><strong id="topTeam">—</strong><p id="topTeamMeta">—</p></div>
+      <div class="card"><span>Last Place</span><strong id="lastPlace">—</strong><p id="lastPlaceMeta">—</p></div>
+      <div class="card"><span>Most Ill-Disciplined</span><strong id="badTeam">—</strong><p id="badTeamMeta">—</p></div>
+      <div class="card"><span>Current Leader</span><strong id="leader">—</strong><p id="leaderMeta">—</p></div>
+    </section>
+
+    <section class="grid">
+      <div class="panel">
+        <h2>Prize / Person Leaderboard</h2>
+        <table><thead><tr><th>Person</th><th>Teams</th><th>Points</th><th>GD</th></tr></thead><tbody id="peopleBody"></tbody></table>
+      </div>
+      <div class="panel">
+        <h2>Special Awards</h2>
+        <div class="award"><span>Closest to 69th Minute</span><strong>Update in Google Sheet</strong></div>
+        <div class="award"><span>Most Powerful Goal</span><strong>Update in Google Sheet</strong></div>
+        <div class="award"><span>Highest Scoring Game</span><strong>Update in Google Sheet</strong></div>
+        <p class="note">This version reads your live Teams tab. Add Manual tab CSV later for these awards.</p>
+      </div>
+    </section>
+
+    <section class="panel full">
+      <h2>Team Table</h2>
+      <table><thead><tr><th>Rank</th><th>Country</th><th>Code</th><th>Group</th><th>Person</th><th>Pts</th><th>GD</th><th>Disc.</th><th>Y</th><th>R</th></tr></thead><tbody id="teamsBody"></tbody></table>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
